@@ -1,4 +1,3 @@
-// Lab 3 icecream.cpp 
 // This program calculate total icecream sales by product.
 // Yasim Cruz
 
@@ -9,13 +8,12 @@ using namespace std;
 
 int main()
 {  
-   // DEFINE NAMED CONSTANTS HERE TO HOLD THE PRICES OF THE 3 SIZES OF ICE CREAM CONES. GIVE EACH ONE A DESCRIPTIVE
-   // NAME AND AN APPROPRIATE DATA TYPE. 
+   // DEFINE NAMED CONSTANTS HERE TO HOLD THE PRICES OF THE 3 SIZES OF ICE CREAM CONES. 
    double delightful = 1.49;
    double doubleDelight = 2.49;
    double tripleDelight = 3.49;
    
-   // DECLARE ALL NEEDED VARIABLES HERE. GIVE EACH ONE A DESCRIPTIVE NAME AND AN APPROPRIATE DATA TYPE. 
+   // DECLARE ALL NEEDED VARIABLES HERE.  
    int oneScoop,
    twoScoop,
    threeScoop,
@@ -26,7 +24,7 @@ int main()
    tripleTotal,
    salesTotal;
 
-   // WRITE STATEMENTS HERE TO PROMPT FOR AND INPUT THE INFORMATION THE PROGRAM NEEDS TO GET FROM THE USER.
+   // THESE STATEMENTS PROMPT FOR, AND INPUT THE INFORMATION THE PROGRAM NEEDS TO GET FROM THE USER.
    cout << "Number of single scoop cones sold: ";
    cin >> oneScoop;
    cout << "Number of double scoop cones sold: ";
@@ -34,7 +32,7 @@ int main()
    cout << "Number of triple scoop cones sold: ";
    cin >> threeScoop; 
 
-   // WRITE STATEMENTS HERE TO PERFORM ALL NEEDED COMPUTATIONS AND ASSIGN THE RESULTS TO VARIABLES.
+   //PERFORM ALL NEEDED COMPUTATIONS AND ASSIGN THE RESULTS TO VARIABLES.
    singleTotal = static_cast<float>(oneScoop * delightful);
    doubleTotal = static_cast<double>(twoScoop * doubleDelight);
    tripleTotal = static_cast<double>(threeScoop * tripleDelight);
@@ -42,7 +40,7 @@ int main()
    salesTotal = static_cast<double>(singleTotal + doubleTotal + tripleTotal);
    
    
-   // WRITE STATEMENTS HERE TO DISPLAY THE REQUESTED INFORMATION.
+   //DISPLAY THE REQUESTED INFORMATION.
    cout << endl;
    std::cout << std::fixed << std::setprecision(2);
    cout << "DeLIGHTful cones       " << setw(5) << right << oneScoop << "   " << "$" << setw(7) << right << singleTotal << endl;
